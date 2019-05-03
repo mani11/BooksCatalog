@@ -1,4 +1,4 @@
-# BooksCatalog
+# Books Catalog
 This is a python and flask website repository for Book Catalog.
 It has the following features:
 1. The user can login through facebook and google sign in.
@@ -39,6 +39,24 @@ After the download,you will have a directory containing the VM files. Change to 
 From your terminal, inside the vagrant subdirectory, run the command _**vagrant up_**. This will cause Vagrant to download the Linux operating system and install it.
 
 When vagrant up is finished running, you will get your shell prompt back. At this point, you can run _**vagrant ssh**_ to log in to your newly installed Linux VM!
+
+**Running the database**
+
+This project uses sqlite3 database.
+Inside the vagrant folder run the database_setup.py file to create the database tables.
+Run the command python database_setup.py
+
+
+**Download the data**
+
+Next, populate the database with some dummy data created in the dataset.py file
+Run the command python dataset.py
+
+
+
+
+
+
 
 
 
