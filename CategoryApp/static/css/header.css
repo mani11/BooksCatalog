@@ -29,7 +29,7 @@ font-size:x-large;
     color:#ffffff;
 }
 .image-container{
-background-image: url("../static/header_pic.jpeg");
+background-image: url("../images/header_pic.jpeg");
 height:200px;
 background-size: cover;
 text-align:center;

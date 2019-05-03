@@ -1,7 +1,7 @@
 .col-left{
     float:left;
     width:40%;
-    background-image:url("../static/cover_pic.jpeg");
+    background-image:url("../images/cover_pic.jpeg");
     background-size:cover;
     height:100%;
 }
@@ -45,7 +45,7 @@
     background: transparent;
     width: 154px;
     height:35px;
-    background-image:url("../static/btn_google.png");
+    background-image:url("../images/btn_google.png");
     background-size:cover;
     margin-bottom:1rem;
 }
