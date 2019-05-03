@@ -1,0 +1,38 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <title>Book Catalog</title>
+
+    <link rel=stylesheet type=text/css href="{{url_for('static',filename='add_category.css')}}">
+</head>
+
+<body>
+    {% extends "main.html" %}
+    {% block content %}
+    <header>
+        {% include "header.html" %}
+    </header>
+    <main>
+        <div class="content-wrapper">
+            <div class="content">
+                <form class="form-horizontal" action="{{url_for('createCategory')}}" method='post'>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Category Name</label>
+                        <div class="col-sm-10">
+                            <input class="form-control" type='text' class="align-item" name="category_name">
+                        </div>
+                        <div class="col-sm-2"></div>
+                        <div class="col-sm-10">
+                            <button type="submit" class="create-btn">Create</button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </main>
+    {% endblock%}
+</body>
+
+</html>

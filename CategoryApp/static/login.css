@@ -1,0 +1,56 @@
+.col-left{
+    float:left;
+    width:40%;
+    background-image:url("../static/cover_pic.jpeg");
+    background-size:cover;
+    height:100%;
+}
+.col-right{
+    float:right;
+    width:60%;
+    height:100%;
+    background-color: rgb(15,157,88);
+}
+.login-container{
+    width:450px;
+    margin:0 auto;
+    vertical-align: middle;
+    background-color:rgb(255,255,255);
+    text-align: center;
+    border: 2px solid rgb(15,157,88);
+    position: relative;
+    top: 10rem;
+    padding-bottom: 1rem;
+}
+.login-header{
+    height:40px;
+    background-color:rgb(255,255,255);
+    color:rgb(15,157,88);
+    padding:1rem;
+    margin-bottom:1rem;
+
+}
+.login-heading{
+    margin:0;
+    padding:0.5rem;
+}
+
+.book-logo img{
+    width: 92px;
+    height: 80px;
+    border-radius: 50%;
+}
+.sing-in-btn{
+    padding: 1rem;
+    background: transparent;
+    width: 154px;
+    height:35px;
+    background-image:url("../static/btn_google.png");
+    background-size:cover;
+    margin-bottom:1rem;
+}
+.fb-btn{
+    background: transparent;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}

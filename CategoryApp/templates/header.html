@@ -1,0 +1,35 @@
+<head>
+    <link rel=stylesheet type=text/css href="{{url_for('static',filename='header.css')}}">
+    <link rel=stylesheet type=text/css href="{{url_for('static',filename='global.css')}}">
+
+</head>
+<div class="header-bar">
+    <a class="home-icon" href="{{url_for('getBookCatalog')}}"><i class="fas fa-home"></i></a>
+
+    {% if 'username' in session %}
+    <a class="login-btn content-font" href="{{url_for('disconnect')}}">Logout</a>
+    {% else %}
+    <a class="login-btn content-font" href="{{url_for('showLogin')}}">Login</a>
+    {% endif %}
+</div>
+<div class="image-container">
+        <div class="opaque-container">
+            <div>
+                <image name="profile-pic" class="user-image"></image>
+                <p name="user" class="user-name content-font"></p>
+                {% if 'username' in session %}
+                <script>
+                    var username = {{ login_session['username']| tojson}};
+                    var picture = {{ login_session['picture']| tojson}};
+                    $('.user-image').attr('src', picture);
+                    $('.user-name').text('Welcome ' + username);
+                </script>
+                {% else %}
+                <script>
+                    $('.user-image').attr('src', "../static/guest_user.jpg");
+                    $('.user-name').text('Welcome Guest');
+                </script>
+                {% endif %}
+            </div>
+        </div>
+    </div>

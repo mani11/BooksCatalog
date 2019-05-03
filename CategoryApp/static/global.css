@@ -1,0 +1,14 @@
+body{
+    margin:0;
+    box-sizing: border-box;
+}
+.heading-font{
+    font-family: 'Josefin Sans', sans-serif;
+}
+.content-font{
+    font-family: 'Varela Round', sans-serif;
+}
+
+button{
+    font-family: 'Varela Round', sans-serif;
+}

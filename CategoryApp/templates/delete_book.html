@@ -1,0 +1,27 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <title>Book Catalog</title>
+    <link rel=stylesheet type=text/css href="{{url_for('static',filename='global.css')}}">
+    <link rel=stylesheet type=text/css href="{{url_for('static',filename='delete_book.css')}}">
+</head>
+
+<body>
+    {% extends "main.html" %}
+    {% block content %}
+    <header>
+        {% include "header.html" %}
+    </header>
+    <div class="content-wrapper">
+        <div class="content">
+            <form action="{{url_for('deleteBook',book_id = book.id,category_id = category.id)}}"
+                method='post'>
+                <h3 class="heading-font">Are you sure you want to delete the book <b>{{book.name}}</b> ?</h3>
+                <button class="update-btn" type="submit">Delete</button>
+            </form>
+        </div>
+    </div>
+    {% endblock%}
+</body>
+</html>

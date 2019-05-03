@@ -1,0 +1,15 @@
+.book-content{
+    padding:2rem;
+    border:1px solid rgb(15,157,88);
+}
+.book-content p{
+display:inline-block;
+}
+.edit-book-details,.delete-book-details{
+color:rgb(15,157,88);
+}
+p a:hover{
+background-color: rgb(15,157,88);
+color:white;
+}
+    

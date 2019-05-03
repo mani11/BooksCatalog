@@ -1,0 +1,18 @@
+.content-wrapper{
+    background-color: white;;
+    }
+.content{
+        padding:2rem;
+    }
+.align-item{
+        margin-bottom:1rem;
+    }
+.create-btn{
+        color: white;
+        background-color: rgb(15,157,88);
+        padding: 1rem;
+        width: 25rem;
+        border-radius: 5px;
+        font-size:large;
+        margin-top:2rem;
+    }

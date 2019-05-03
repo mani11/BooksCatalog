@@ -1,0 +1,50 @@
+.content{
+    overflow:auto;
+}
+.left-col{
+    width:20%;
+    height:100%;
+    float:left;
+    padding:1rem;
+}
+.right-col{
+    width:70%;
+    height:100%;
+    float:right;
+    padding-left: 1rem;
+    padding-top:1rem;
+}
+.book-category{
+   padding:0.5rem;
+}
+
+.book-category:hover{
+    background-color: rgb(15,157,88);
+    color:white;
+}
+.category-name{
+    text-decoration:none;
+    color:#000000;
+    font-size: 1.825rem;
+}
+a.category-name:hover{
+    text-decoration:none;
+}
+
+.create-btn{
+    color: white;
+    background-color: rgb(15,157,88);
+    padding: 0.5rem;
+    width: 15rem;
+    border-radius: 5px;
+    font-size: medium;
+    margin-right:3rem;
+}
+.create-btn-container{
+    padding:1rem;
+    margin-bottom:3rem;
+}
+button.create-btn:hover{
+    color:rgb(15,157,88);
+    background-color:#ffffff;
+}

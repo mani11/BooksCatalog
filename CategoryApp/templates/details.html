@@ -1,0 +1,30 @@
+<head>
+    <link rel=stylesheet type=text/css href="{{url_for('static',filename='global.css')}}">
+    <link rel=stylesheet type=text/css href="{{url_for('static',filename='detail.css')}}">
+
+</head>
+
+<body>
+        {% if category %}
+        <h3 class="details-heading heading-font">{{category.name}}</h3>
+        {% else %}
+        <h3 class="details-heading heading-font">Recently Added</h3>
+        {% endif %}
+    {% for book in books %}
+   
+    <div class="book-container">
+       
+        <div class="book-image">
+            <i class="fas fa-book"></i>
+        </div>
+        <a class="book-detail-link" href="{{url_for('bookDetails',category_id = book.category_id,book_id = book.id)}}">
+        <div class="book-details content-font">
+            <p class="book-name">{{book.name}}</p>
+            <p class="book-author">{{book.author}}</p>
+        </div>
+        </a>
+        
+    </div>
+
+    {% endfor %}
+</body>

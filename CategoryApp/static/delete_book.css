@@ -1,0 +1,14 @@
+.content-wrapper{
+    background-color: white;
+}
+.content{
+    padding:1rem;
+}
+.update-btn{
+    color: white;
+    background-color: rgb(15,157,88);
+    padding: 1rem;
+    width: 20rem;
+    border-radius: 5px;
+    font-size:large;
+}

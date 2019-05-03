@@ -1,0 +1,41 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <link rel=stylesheet type=text/css href="{{url_for('static',filename='catalog.css')}}">
+</head>
+
+<body>
+    {% extends "main.html" %}
+    {% block content %}
+    <header>
+        {% include "header.html" %}
+    </header>
+    <main>
+        <div class="content">
+            <div class="left-col">
+                {% for c in categories %}
+                <a class="category-name" href="{{url_for('getAllBooksForCategory',category_id = c.id)}}">
+                    <div class="book-category heading-font">
+                        {{c.name}}
+                    </div>
+                </a>
+                {% endfor %}
+
+            </div>
+            <div class="right-col">
+                {% if books %}
+                {% include "details.html" %}
+                {% endif %}
+
+            </div>
+
+        </div>
+
+        {% endblock %}
+    </main>
+
+
+</body>
+
+</html>

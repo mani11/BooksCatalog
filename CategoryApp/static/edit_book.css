@@ -1,0 +1,16 @@
+.content{
+    margin-top:3rem;
+}
+.category-dropdown{
+    width: 200px;
+    height: 40px;
+}  
+.update-btn{
+    color: white;
+    background-color: rgb(15,157,88);;
+    padding: 1rem;
+    width: 25rem;
+    border-radius: 5px;
+    font-size:large;
+    margin-top:2rem;
+}

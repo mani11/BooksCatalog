@@ -1,0 +1,47 @@
+.header-bar{
+    height:40px;
+    background-color:rgb(15,157,88);
+    color:#ffffff;
+}
+.home-icon{
+display:inline-block;
+margin-top:0.6rem;
+color:white;
+float:left;
+margin-left:1rem;
+font-size:x-large;
+}
+.home-icon:hover{
+    text-decoration: none;
+    color:#ffffff;
+}
+.login-btn{
+    display:inline-block;
+    margin-top:0.6rem;
+    color:white;
+    float:right;
+    margin-right:1rem;
+    text-decoration: none;
+    font-size:large;
+}
+.login-btn:hover{
+    text-decoration:none;
+    color:#ffffff;
+}
+.image-container{
+background-image: url("../static/header_pic.jpeg");
+height:200px;
+background-size: cover;
+text-align:center;
+}
+.opaque-container{
+    background-color: rgba(255,255,255,0.4);
+    padding: 2rem;
+    position:relative;
+    top:3rem;
+}
+.user-image{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+}

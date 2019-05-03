@@ -1,0 +1,53 @@
+.details-heading{
+    margin-top:0;
+}
+.book-container{
+    overflow: auto;
+    border: 1px solid rgb(15,157,88);
+    min-width: 230px;
+    max-width:230px;
+    display: inline-block;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    padding:0.3rem;
+}
+.book-image{
+    float: left;
+    font-size: xx-large;
+    padding: 0.3rem;
+    margin-right:1rem;
+    color:#ffffff;
+    background-color:rgb(15,157,88);
+}
+.book-details{
+    padding: 0.3rem;
+}
+
+.book-details:hover{
+    background-color:rgb(15,157,88);
+    color:#ffffff;
+}
+
+.book-details p{
+    margin:0;
+}
+
+.book-detail-link{
+    color:#000000;
+    text-decoration: none;
+}
+.book-detail-link:hover{
+    text-decoration: none;
+}
+h2{
+    margin: 0;
+    margin-bottom:0.5rem;
+}
+.book-author{
+    font-size: smaller;
+    font-style: italic;
+}
+.book-name{
+    font-weight: bold;
+}
+
