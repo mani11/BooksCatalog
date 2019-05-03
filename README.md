@@ -10,4 +10,36 @@ It has the following features:
 7. The user can logout of the website and can view the categories/book. If a user is not logged in he/she will not have the      rights to create/update/delete a book or a category.
 
 
+## Getting Started
+
+Download the code with git clone https://github.com/mani11/BooksCatalog.git
+
+### Prerequisites
+
+**You should have python3 installed.** 
+
+_Download link_:https://www.python.org/downloads/
+
+**You need VirtualBox tool to run VM.**
+
+_Download Link_: https://www.virtualbox.org/wiki/Download_Old_Builds_5_2
+
+**You need vagrant to configure the VM**
+
+_Download Link_:https://www.vagrantup.com/downloads.html
+
+Once you have the VMBox and vagrant you need to download the configuration for the VM
+
+_Git link_: https://github.com/udacity/fullstack-nanodegree-vm
+
+After the download,you will have a directory containing the VM files. Change to this directory in your terminal with cd. Inside, you will find another directory called vagrant. Change directory to the vagrant directory:
+
+**Start Virtual Machine:**
+
+From your terminal, inside the vagrant subdirectory, run the command _**vagrant up_**. This will cause Vagrant to download the Linux operating system and install it.
+
+When vagrant up is finished running, you will get your shell prompt back. At this point, you can run _**vagrant ssh**_ to log in to your newly installed Linux VM!
+
+
+
 
