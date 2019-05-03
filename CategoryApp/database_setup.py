@@ -23,6 +23,13 @@ class BookCategory(Base):
     id = Column(Integer,primary_key = True)
     name = Column(String(140),nullable = False)
 
+    @property
+    def serializable(self):
+        return {
+            'id' : self.id,
+            'Categoryname' : self.name
+        }
+
 class Books(Base):
 
     __tablename__ = 'books'
@@ -39,6 +46,22 @@ class Books(Base):
     created_at = Column(DateTime, default=datetime.datetime.utcnow)
     updated_at = Column(DateTime, default=datetime.datetime.utcnow,
                         onupdate=datetime.datetime.utcnow)
+
+    @property
+    def serialize(self):
+        return{
+            'id' : self.id,
+            'name' : self.name,
+            'description' : self.description,
+            'author' : self.author,
+            'price' : self.price,
+            'user' : self.user_id,
+            'category' : self.book_category.serializable,
+            'created_at' : self.created_at,
+            'updated_at' : self.updated_at      
+        }
+
+                    
 
 
 engine = create_engine('sqlite:///books.db')

@@ -329,7 +329,12 @@ def deleteBook(book_id,category_id):
         session.commit()
         return redirect(url_for('getBookCatalog',login_session = login_session))
     else:    
-        return render_template('delete_book.html',book = book,category = category,login_session = login_session)          
+        return render_template('delete_book.html',book = book,category = category,login_session = login_session)
+
+@app.route('/catalog.json')
+def getBookDetails():
+    books = session.query(Books).all()
+    return jsonify(books = [i.serialize for i in books])          
 
 if __name__ == '__main__':
     app.secret_key = 'super_secret_key'
