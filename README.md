@@ -58,6 +58,11 @@ Next, run the application with _**python Books.py**_ command. This will start th
 Now from the browser visit _**localhost:5000/login**_ to land on the login page. To visit the home page visit _**localhost:5000/catalog**_
 or _**localhost:5000/**_
 
+**API end point**
+To view the data in the json format visit localhost:5000/catalog.json
+
+
+
 
 
 
