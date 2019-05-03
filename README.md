@@ -44,13 +44,13 @@ When vagrant up is finished running, you will get your shell prompt back. At thi
 
 This project uses sqlite3 database.
 Inside the vagrant folder run the database_setup.py file to create the database tables.
-Run the command python database_setup.py
+Run the command _**python database_setup.py**_
 
 
 **Download the data**
 
 Next, populate the database with some dummy data created in the dataset.py file
-Run the command python dataset.py
+Run the command _**python dataset.py**_
 
 
 
