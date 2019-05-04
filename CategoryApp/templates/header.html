@@ -25,7 +25,8 @@
                 </script>
                 {% else %}
                 <script>
-                    $('.user-image').attr('src', "../static/guest_user.jpg");
+                    var img_path = window.location.origin
+                    $('.user-image').attr('src', img_path+"/static/images/guest_user.jpg");
                     $('.user-name').text('Welcome Guest');
                 </script>
                 {% endif %}
