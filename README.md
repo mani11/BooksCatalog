@@ -59,7 +59,11 @@ Now from the browser visit _**localhost:5000/login**_ to land on the login page.
 or _**localhost:5000/**_
 
 **API end point**
-To view the data in the json format visit localhost:5000/catalog.json
+To view the data in the json format visit 
+1. API end point /Catalog/JSON to get the json endpoint for the Books Catalog data
+2. API end point /Category/JSON to get all book categories
+3. API end point /Category/<int:id>/Books/JSON to get all books for a specified category
+4. API end point /Category/<int:category_id>/Books/<int:book_id>/JSON to get a specified book
 
 
 
