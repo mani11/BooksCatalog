@@ -1,4 +1,4 @@
-from flask import Flask, render_template, url_for, redirect, request
+from flask import Flask, render_template, url_for, redirect, request, jsonify
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from database_setup import Base, BookCategory, Books, User
@@ -369,10 +369,29 @@ def deleteBook(book_id, category_id):
                                category=category, login_session=login_session)
 
 
-@app.route('/catalog.json')
-def getBookDetails():
+@app.route('/Catalog/JSON')
+def getBookCalatog():
     books = session.query(Books).all()
     return jsonify(books=[i.serialize for i in books])
+
+
+@app.route('/Category/JSON')
+def getCategories():
+    categories = session.query(BookCategory).all()
+    return jsonify(categories=[c.serializable for c in categories])
+
+
+@app.route('/Category/<int:id>/Books/JSON')
+def getBooks(id):
+    books = session.query(Books).filter_by(category_id=id).all()
+    return jsonify(books=[b.serialize for b in books])
+
+
+@app.route('/Category/<int:category_id>/Books/<int:book_id>/JSON')
+def getBook(category_id, book_id):
+    book = (session.query(Books)
+            .filter_by(category_id=category_id, id=book_id).one())
+    return jsonify(book=[book.serialize])
 
 
 if __name__ == '__main__':
