@@ -52,13 +52,13 @@ Run the command _**python database_setup.py**_
 Next, populate the database with some dummy data created in the dataset.py file
 Run the command _**python dataset.py**_
 
-# Running the App
+## Running the App
 
 Next, run the application with _**python Books.py**_ command. This will start the server at port 5000.
 Now from the browser visit _**localhost:5000/login**_ to land on the login page. To visit the home page visit _**localhost:5000/catalog**_
 or _**localhost:5000/**_
 
-# API end point
+## API end point
 To view the data in the json format visit 
 1. API end point /Catalog/JSON to get the json endpoint for the Books Catalog data
 2. API end point /Category/JSON to get all book categories
